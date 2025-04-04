@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block title %}Contact Us{% endblock %}
+
+{% block content %}
+<div class="main-container">
+    <div class="page-header">
+        <section class="service-header">
+            <h2>联系我们</h2>
+            <p>If you have any questions, feedback, or inquiries about our services, feel free to reach out to us through the following platforms. We're always happy to connect and assist you!</p>
+        </section>
+    </div>
+    <div class="inner-container">
+        <div class="social-links">
+            <div class="social-item">
+                <img src="/static/icons/discord.jpg" alt="Discord">
+                <div>
+                    <strong>Discord</strong>
+                    <p>@DiscordID</p>
+                </div>
+            </div>
+            <div class="social-item">
+                <img src="/static/icons/instagram.png" alt="Instagram">
+                <div>
+                    <strong>Instagram</strong>
+                    <p><a href="#" class="no-style-link">@InstagramHandle</a></p>
+                </div>
+            </div>
+            <div class="social-item">
+                <img src="/static/icons/tiktok.jpg" alt="TikTok">
+                <div>
+                    <strong>TikTok</strong>
+                    <p><a href="#" class="no-style-link">@TikTokUsername</a></p>
+                </div>
+            </div>
+            <div class="social-item">
+                <img src="/static/icons/wechat.png" alt="WeChat">
+                <div>
+                    <strong>WeChat</strong>
+                    <p>WeChatID</p>
+                </div>
+            </div>
+            <div class="social-item">
+                <img src="/static/icons/rednote.png" alt="Red Note">
+                <div>
+                    <strong>Red Note</strong>
+                    <p>@RedNoteID</p>
+                </div>
+            </div>
+        </div>
+            
+        <p>Our team is available to respond to your inquiries during business hours, and we'll ensure to provide you with the best possible experience. Don't hesitate to reach out!</p>
+        
+        <div class="business-hours">
+            <h3>营业时间</h3>
+            <ul>
+                <li><span class="day">周一到周日：</span> <span class="hours">10:00 AM - 9:00 PM</span></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script>
+    document.querySelector('.large-hero').style.backgroundImage = `url(/static/images/contact.jpg)`;
+</script>
+{% endblock %}

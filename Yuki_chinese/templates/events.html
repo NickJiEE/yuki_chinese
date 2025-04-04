@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block title %}Jobs at Yuki{% endblock %}
+
+{% block content %}
+<div class="main-container">
+    <div class="large-hero">[Current Event Image Placeholder]</div>
+    <div class="page-header">
+        <section class="service-header">
+            <h2>活动信息</h2>
+        </section>
+    </div>
+    <div class="inner-container">
+        <div class="event-steps">
+            <h2>Limit Events and Sales</h2>
+            <div class="event-steps-container">
+                <a href="#step1" class="event-step">
+                    <div class="event-step-title">开业大吉</div>
+                    <div class="event-step-text">Event 1</div>
+                </a>
+                <a href="#step2" class="event-step">
+                    <div class="event-step-title">Event 2</div>
+                    <div class="event-step-text">Event 2</div>
+                </a>
+                <a href="#step3" class="event-step">
+                    <div class="event-step-title">Event 3</div>
+                    <div class="event-step-text">Event 3</div>
+                </a>
+            </div>
+        </div>
+        <section class="content-section">
+            <h2>Event Details</h2>
+            <p>Below are the details of events</p>
+        </section>
+        <section class="event-section">
+            <ol>
+                <li id="step1">
+                    <strong>Grand Opening Sales:</strong> Grand opening, 10% off all purchases.
+                    <img src="/static/images/event1.jpg" alt="Event 1 Image" class="event-img">
+                </li>
+                <li id="step2">
+                    <strong>Event 2:</strong> Whatever other event.
+                    <img src="/static/images/event2.jpg" alt="Event 2 Image" class="event-img">
+                </li>
+            </ol>
+        </section>        
+    </div>
+</div>
+<script>
+    document.querySelector('.large-hero').style.backgroundImage = `url(/static/images/current_event.jpg)`;
+</script>
+{% endblock %}

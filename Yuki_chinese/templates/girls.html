@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+{% block title %}Our Best Girls{% endblock %}
+
+{% block content %}
+<main>
+    <section class="best-girls-section">
+        <h2>Yuki艺人一览</h2>
+        
+        <!-- Introduction -->
+        <p class="girls-introduction">
+            Yuki初恋会馆的艺人是由经过严格培训的女友提供服务。
+            与仅仅介绍女生的服务完全不同，其质量有着显著的差异，给予您最独特难忘的独特时光。
+        </p>
+
+        <div class="best-girls-grid">
+    
+            <!-- Girl One -->
+            <div class="girl-card">
+              <!-- Rank Badge -->
+              <!-- <span class="girl-rank-badge">No.1</span> -->
+    
+              <a href="/girl_one">
+                <img 
+                  src="/static/images/test4.webp" 
+                  alt="Girl One" 
+                  class="girl-image"
+                >
+              </a>
+        
+              <!-- Info Section -->
+              <div class="girl-info">
+                <!-- Name + Tier Label -->
+                <h3>
+                  Edison Zhong
+                  <span class="girl-tier premium">白月光</span>
+                </h3>
+                
+                <!-- Short Description -->
+                <p class="girl-description">#Lively and talkative</p>
+                
+                
+              </div>
+            </div>
+        
+            <!-- Girl Two -->
+            <div class="girl-card">
+              <!-- <span class="girl-rank-badge special-rank">No.2</span> -->
+              <a href="/girl_two">
+                <img 
+                  src="/static/images/test3.webp" 
+                  alt="Girl Two" 
+                  class="girl-image"
+                >
+              </a>
+              <div class="girl-info">
+                <h3>
+                  Bob Yang
+                  <span class="girl-tier special">初恋</span>
+                </h3>
+                <p class="girl-description">#I want to be there for people who lack confidence</p>
+                
+              </div>
+            </div>
+        
+            <!-- Girl Three -->
+            <div class="girl-card">
+              <!-- <span class="girl-rank-badge regular-rank">No.3</span> -->
+              <a href="/girl_three">
+                <img 
+                  src="/static/images/test2.webp" 
+                  alt="Girl Three" 
+                  class="girl-image"
+                >
+              </a>
+              <div class="girl-info">
+                <h3>
+                  Charles Cai
+                  <span class="girl-tier regular">女友</span>
+                </h3>
+                <p class="girl-description">#Cheerful and empathetic</p>
+                
+              </div>
+            </div>
+        
+            <!-- Girl Four -->
+            <div class="girl-card">
+              <!-- <span class="girl-rank-badge special-rank">No.4</span> -->
+              <a href="/girl_four">
+                <img 
+                  src="/static/images/test.webp" 
+                  alt="Girl Four" 
+                  class="girl-image"
+                >
+              </a>
+              <div class="girl-info">
+                <h3>
+                  Miyuki Sone
+                  <span class="girl-tier special">初恋</span>
+                </h3>
+                <p class="girl-description">#Innocent and affectionate</p>
+              </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}

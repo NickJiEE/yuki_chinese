@@ -1,0 +1,171 @@
+{% extends "base.html" %}
+{% block title %}Yuki{% endblock %}
+
+{% block content %}
+<div class="index-container">
+    
+    <!-- Hero Image -->
+    <div class="large-hero">
+        
+    </div>
+
+    <!-- Girls Section -->
+    <section class="best-girls-section">
+      
+      <h2>为您推荐</h2>
+      <div class="best-girls-grid">
+    
+        <!-- Girl One -->
+        <div class="girl-card">
+          <!-- Rank Badge -->
+          <!-- <span class="girl-rank-badge">No.1</span> -->
+
+          <a href="/girl_one">
+            <img 
+              src="/static/images/test4.webp" 
+              alt="Girl One" 
+              class="girl-image"
+            >
+          </a>
+    
+          <!-- Info Section -->
+          <div class="girl-info">
+            <!-- Name + Tier Label -->
+            <h3>
+              Edison Zhong
+              <span class="girl-tier premium">白月光</span>
+            </h3>
+            
+            <!-- Short Description -->
+            <p class="girl-description">#Lively and talkative</p>
+            
+            
+          </div>
+        </div>
+    
+        <!-- Girl Two -->
+        <div class="girl-card">
+          <!-- <span class="girl-rank-badge special-rank">No.2</span> -->
+          <a href="/girl_two">
+            <img 
+              src="/static/images/test3.webp" 
+              alt="Girl Two" 
+              class="girl-image"
+            >
+          </a>
+          <div class="girl-info">
+            <h3>
+              Bob Yang
+              <span class="girl-tier special">初恋</span>
+            </h3>
+            <p class="girl-description">#I want to be there for people who lack confidence</p>
+            
+          </div>
+        </div>
+    
+        <!-- Girl Three -->
+        <div class="girl-card">
+          <!-- <span class="girl-rank-badge regular-rank">No.3</span> -->
+          <a href="/girl_three">
+            <img 
+              src="/static/images/test2.webp" 
+              alt="Girl Three" 
+              class="girl-image"
+            >
+          </a>
+          <div class="girl-info">
+            <h3>
+              Charles Cai
+              <span class="girl-tier regular">女友</span>
+            </h3>
+            <p class="girl-description">#Cheerful and empathetic</p>
+            
+          </div>
+        </div>
+    
+        <!-- Girl Four -->
+        <div class="girl-card">
+          <!-- <span class="girl-rank-badge special-rank">No.4</span> -->
+          <a href="/girl_four">
+            <img 
+              src="/static/images/test.webp" 
+              alt="Girl Four" 
+              class="girl-image"
+            >
+          </a>
+          <div class="girl-info">
+            <h3>
+              Miyuki Sone
+              <span class="girl-tier special">初恋</span>
+            </h3>
+            <p class="girl-description">#Innocent and affectionate</p>
+          </div>
+        </div>
+      </div>
+      <h3><a href="/girls" class="more-girls-btn">YUKI艺人一览</a></h3>
+    </section>
+      
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <h2 style="font-family: 'Gorditas', sans-serif;">为什么选择Yuki</h2>
+        <p style="font-size: 20px; margin: -5px;">六个原因</p>
+        <div class="features-grid">
+            <div class="feature-item">
+                <img src="https://via.placeholder.com/80" alt="Feature 1">
+                <h3>真实而温暖的陪伴体验</h3>
+                <p>您可以展现真实的自我，我们的艺人会完全顺应你的个性</p>
+            </div>
+            <div class="feature-item">
+                <img src="https://via.placeholder.com/80" alt="Feature 2">
+                <h3>个性化的约会安排</h3>
+                <p>如果您想不到约会的时候干什么，我们的艺人会为你提出约会计划</p>
+            </div>
+            <div class="feature-item">
+                <img src="https://via.placeholder.com/80" alt="Feature 3">
+                <h3>高质量的服务与体验</h3>
+                <p>仅仅外表出众不足以成为我们的艺人，我们的培训使艺人具有积极的品质</p>
+            </div>
+        </div>
+        <div class="features-grid">
+          <div class="feature-item">
+              <img src="https://via.placeholder.com/80" alt="Feature 4">
+              <h3>灵活的服务时间和选择</h3>
+              <p>我们提供灵活的时间安排，根据您的需求提供最适合的约会时间和陪伴方式</p>
+          </div>
+          <div class="feature-item">
+              <img src="https://via.placeholder.com/80" alt="Feature 5">
+              <h3>多伦多首家租借女友</h3>
+              <p>我们作为行业的先锋，凭借丰富的经验和专业的服务，为您提供最真挚的陪伴</p>
+          </div>
+          <div class="feature-item">
+            <img src="https://via.placeholder.com/80" alt="Feature 6">
+            <h3>严格的隐私保护</h3>
+            <p>我们严格保密客户和艺人信息，我们将为您的安全保障护航直至服务结束</p>
+        </div>
+      </div>
+        <a href="/about" class="why-choose-btn">关于我们</a>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="social-media-section">
+      <div class="business-hours">
+        <h2 style="margin-bottom: 0;">营业时间</h2>
+        <p>周一到周日：10:00 AM - 10:00 PM</p>
+      </div>
+        <h2>关注我们</h2>
+        <p>如果您想了解我们的服务或有任何疑问，请随时联系我们。</p>
+        <div class="social-btns">
+            <a href="/contacts" class="btn"><img src="/static/icons/discord.jpg" alt="Discord"> Discord</a>
+            <a href="#" class="btn"><img src="/static/icons/instagram.png" alt="Instagram"> Instagram</a>
+            <a href="#" class="btn"><img src="/static/icons/tiktok.jpg" alt="TikTok"> TikTok</a>
+            <a href="#" class="btn"><img src="/static/icons/wechat.png" alt="WeChat"> WeChat</a>
+            <a href="#" class="btn"><img src="/static/icons/rednote.png" alt="Rednote"> Red Note</a>
+        </div>
+        
+    </section>
+</div>
+<script>
+  document.querySelector('.large-hero').style.backgroundImage = `url(/static/images/index.jpg)`;
+</script>
+{% endblock %}

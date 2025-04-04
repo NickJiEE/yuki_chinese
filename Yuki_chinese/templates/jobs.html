@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block title %}Jobs at Yuki{% endblock %}
+
+{% block content %}
+<div class="main-container">
+    <div class="large-hero">[Jobs Page Image Placeholder]</div>
+    <div class="page-header">
+        <section class="service-header">
+            <h2>招聘信息</h2>
+        </section>
+    </div>
+    <div class="inner-container">
+        <div class="interview-steps">
+            <h2>面试流程</h2>
+            <div class="steps-container">
+                <a href="#step1" class="step">
+                    <div class="step-number">01</div>
+                    <div class="step-text">在线申请</div>
+                </a>
+                <a href="#step2" class="step">
+                    <div class="step-number">02</div>
+                    <div class="step-text">初步筛选</div>
+                </a>
+                <a href="#step3" class="step">
+                    <div class="step-number">03</div>
+                    <div class="step-text">面试</div>
+                </a>
+                <a href="#step4" class="step">
+                    <div class="step-number">04</div>
+                    <div class="step-text">背景调查</div>
+                </a>
+                <a href="#step5" class="step">
+                    <div class="step-number">05</div>
+                    <div class="step-text">录用通知</div>
+                </a>
+            </div>
+        </div>
+        <section class="content-section">
+            <h2>加入我们</h2>
+            <p>在<i>Yuki</i>>，我们始终在寻找有才华的个人来帮助我们发展并提供最佳的约会体验。无论您是有兴趣作为我们的女孩之一加入，还是希望与我们作为影响者合作，我们都为每个人提供机会。请查看以下的空缺职位：</p>    
+        
+            <h3>Girls Who Want to Work with Us</h3>
+            <p>我们正在寻找自信且友好的女孩，她们热衷于提供高端的约会体验。如果您喜欢结识新朋友、享受乐趣，并建立有意义的联系，我们诚邀您申请并加入我们的团队。这是一个与我们合作、积累经验并在支持性和友好的环境中赚钱的绝佳机会。</p>
+            <p><strong>要求：</strong> 必须年满18岁，性格外向，善于社交，愿意与客户互动。具有客户服务或娱乐行业的工作经验者优先，但不是必需的。</p>
+        
+            <h3>网红联动</h3>
+            <p>If you are an influencer or content creator with a passion for social media and connecting with others, we are looking for collaborations! We offer mutually beneficial partnerships where you can promote our services and get compensated for your efforts. Whether you’re into lifestyle, dating, or entertainment, we'd love to work with you to bring our brand to new audiences.</p>
+            <p><strong>Requirements:</strong> Must have a significant following on social media platforms (Instagram, TikTok, YouTube, etc.), creativity, and an enthusiasm for promoting experiences.</p>
+    
+            <h3>信息推广</h3>
+            <p>We are also open to advertising partnerships with like-minded businesses. If you believe that your brand aligns with ours and want to explore advertisement opportunities, don’t hesitate to reach out. We’re happy to discuss ways to collaborate on promoting both our services and yours.</p>
+            <p><strong>Requirements:</strong> Businesses that align with our values and provide high-quality, complementary services.</p>
+            <p>If you are interested or want to learn more about any of the above roles, please contact us via the <a href="/contact">Contact Us</a> page.</p>
+        </section>
+        <section class="interview-section">
+            <h2>面试流程</h2>
+            <p>我们希望确保每位申请者都能在轻松和友好的环境中进行面试。我们的面试流程包括：</p>
+            <ol>
+                <li id="step1"><strong>在线申请：</strong>填写申请表并提交您的简历。</li>
+                <li id="step2"><strong>初步筛选：</strong>我们会审查您的申请并与符合条件的候选人联系。</li>
+                <li id="step3"><strong>面试：</strong>与我们的招聘团队进行面对面的面试，了解更多关于职位的信息。</li>
+                <li id="step4"><strong>背景调查：</strong>我们会进行必要的背景调查以确保安全。</li>
+                <li id="step5"><strong>录用通知：</strong>如果您通过了所有步骤，我们将向您发送录用通知。</li>
+            </ol>
+        </section> 
+    </div>
+</div>
+<script>
+    document.querySelector('.large-hero').style.backgroundImage = `url(/static/images/job.jpg)`;
+</script>
+{% endblock %}
