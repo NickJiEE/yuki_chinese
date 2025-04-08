@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block title %}活动信息{% endblock %}
+
+{% block content %}
+<div class="main-container">
+    <!-- <div class="large-hero">[Current Event Image Placeholder]</div> -->
+    <div class="page-header">
+        <section class="service-header">
+            <h2>活动信息</h2>
+        </section>
+    </div>
+    <div class="inner-container">
+        <div class="event-steps">
+            <h2>限时活动与折扣</h2>
+            <div class="event-steps-container">
+                <a href="#step1" class="event-step">
+                    <div class="event-step-title">开业狂欢</div>
+                    <div class="event-step-text">Event 1</div>
+                </a>
+                <a href="#step2" class="event-step">
+                    <div class="event-step-title">常驻活动</div>
+                    <div class="event-step-text">Event 2</div>
+                </a>
+            </div>
+        </div>
+        <section class="content-section">
+            <h2>活动详情</h2>
+            <p>以下是活动详情</p>
+        </section>
+        <section class="event1-section" id="step1">
+            <ol>
+                <li>
+                    <strong>开业狂欢：</strong>限时全场9折优惠，活动时间: 4/2 - 4/30。
+                    <img src="/static/images/event1.webp" alt="Event 1 Image" class="event-img">
+                </li>
+            </ol>
+        </section>
+        <section class="event2-section" id="step2">
+            <ol>
+                <li>
+                    <strong>常驻活动：</strong>暂时待定。
+                    <!-- <img src="/static/images/event1.webp" alt="Event 2 Image" class="event-img"> -->
+                </li>
+            </ol>
+        </section>
+    </div>
+</div>
+<!--
+<script>
+    document.querySelector('.large-hero').style.backgroundImage = `url(/static/images/current_event.jpg)`;
+</script>
+-->
+{% endblock %}

@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Your Website{% endblock %}</title>
+    <link rel="icon" type="image/x-icon" href="/static/icons/favicon.ico">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="top-row">
+            <div class="brand">
+                <a href="/">
+                    <img src="/static/icons/brand.png" alt="Brand Logo">
+                </a>
+                <a href="/">Yuki</a>
+                <a href="/" style="font-family: 'Zen Maru Gothic', serif; padding-bottom: 6px; margin-left: 1px;">初恋会館</a>
+            </div>
+
+            <!-- Mobile Hamburger Button -->
+            <button class="menu-toggle">&#9776;</button>
+        </div>
+
+        <div class="nav-links">
+            <a href="/girls">艺人列表</a>
+            <a href="/services">服务</a>
+            <a href="/price">价格</a>
+            <!-- <a href="/about">关于</a> !-->
+            <a href="/events">活动</a>
+            <a href="/jobs">招聘</a>
+            <a href="/contact">联系方式</a>
+        </div>
+    </div>
+    <div class="announcement-bar">
+        🎉🎉 开业活动：4/2 起全场9折 <a href="/events" style="margin-left: 10px;">了解详情</a>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-links">
+            <a href="/terms-and-conditions">条款与条约</a>
+            <a href="/privacy">隐私政策</a>
+            <a href="/contact">联系我们</a>
+            <a href="/jobs">招聘</a>
+        </div>
+        <div>&copy; 2025 Yuki. All Rights Reserved.</div>
+    </div>
+    <script src="/static/js/hamburger_menu.js"></script>
+</body>
+</html>
