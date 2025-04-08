@@ -1,4 +1,4 @@
-# yuki_chinese
+# Yuki Dates
 As a commission/opportunity to learn, I designed this website for my friends who are hosting a business in Toronto, Canada.
 
 ## Multi-layer CSS Design
