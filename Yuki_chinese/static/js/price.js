@@ -11,9 +11,9 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     const discounts = {
-        1: { 6: 588 },
-        2: { 6: 468 },
-        3: { 6: 399 }
+        1: { 6: 588 , 12: 1176 },
+        2: { 6: 468 , 12: 936 },
+        3: { 6: 399 , 12: 798 }
     };
 
     function calculatePrice() {
@@ -40,7 +40,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (hours === 6) {
             cost = discounts[tier][hours]; // Use discount price for 6 or 11 hours
-        } else if (hours > 6) {
+        } 
+        else if (hours === 12) {
+            cost = discounts[tier][hours]; // Use discount price for 12 hours
+        } 
+        else if (hours > 12) {
+            errorMessage.textContent = "Error: The maximum booking time is 12 hours.";
+            totalPrice.textContent = "$0";
+            return;
+        } 
+        else if (hours > 11) {
+            const extraHours = hours - 11;
+            cost = discounts[tier][11] + (extraHours * prices[tier]); // Combo + extra hours
+        }
+        else if (hours > 6) {
             const extraHours = hours - 6;
             cost = discounts[tier][6] + (extraHours * prices[tier]); // Combo + extra hours
         } else {

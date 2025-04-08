@@ -1,19 +1,25 @@
 {% extends "base.html" %}
 
-{% block title %}Girl One Profile{% endblock %}
+{% block title %}叮当猫个人资料{% endblock %}
 
 {% block content %}
 <div class="girl-container">
     <div class="profile-card">
-        <img src="https://via.placeholder.com/250" alt="Person Image" class="profile-img">
-        <div class="profile-info">
-            <h2>Edison Zhong</h2>
-            <p><strong>Gender:</strong> Female</p>
-            <p><strong>Height:</strong> 5'6" (167 cm)</p>
-            <p><strong>Age:</strong> 25</p>
-            <p><strong>Personality:</strong> Cheerful, outgoing, and adventurous</p>
-            <p><strong>Interests:</strong> Music, traveling, photography</p>
-            <a href="/" class="back-btn">Go Back</a>
+        <div class="profile-left">
+            <img src="/static/images/livy.jpg" alt="Person Image" class="profile-img">
+            <div class="profile-info">
+                <h2>叮当猫</h2>
+                <p><strong>性别：</strong>女</p>
+                <p><strong>身高：</strong>168 cm</p>
+                <p><strong>年龄：</strong>22</p>
+                <p><strong>16型人格 (MBTI)：</strong>ENFP</p>
+                <p><strong>星座：</strong>天枰座</p>
+                <a href="/" class="back-btn">返回主页</a>
+            </div>
+        </div>
+
+        <div class="profile-card-logo">
+            <img src="/static/icons/brand.png" class="profile-logo">
         </div>
     </div>
 </div>

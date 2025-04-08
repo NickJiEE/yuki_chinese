@@ -56,6 +56,17 @@ async def girl_one(request: Request):
 async def girl_one(request: Request):
     return templates.TemplateResponse("girl_one.html", {"request": request})
 
+@app.get("/girl_two", response_class=HTMLResponse)
+async def girl_one(request: Request):
+    return templates.TemplateResponse("girl_two.html", {"request": request})
+
+@app.get("/girl_three", response_class=HTMLResponse)
+async def girl_one(request: Request):
+    return templates.TemplateResponse("girl_three.html", {"request": request})
+
+@app.get("/girl_four", response_class=HTMLResponse)
+async def girl_one(request: Request):
+    return templates.TemplateResponse("girl_four.html", {"request": request})
 
 if __name__ == "__main__":
     uvicorn.run("main:app", host="0.0.0.0", port=6543, reload=True)
