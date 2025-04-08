@@ -13,7 +13,7 @@ templates = Jinja2Templates(directory="templates")
 
 # Index page
 @app.get("/", response_class=HTMLResponse)
-async def girl_one(request: Request):
+async def index(request: Request):
     return templates.TemplateResponse("index.html", {"request": request})
 
 @app.get("/girls")
@@ -21,35 +21,35 @@ async def girls_page(request: Request):
     return templates.TemplateResponse("girls.html", {"request": request})
 
 @app.get("/services", response_class=HTMLResponse)
-async def girl_one(request: Request):
+async def services(request: Request):
     return templates.TemplateResponse("services.html", {"request": request})
 
 @app.get("/price", response_class=HTMLResponse)
-async def girl_one(request: Request):
+async def price(request: Request):
     return templates.TemplateResponse("price.html", {"request": request})
 
 @app.get("/about", response_class=HTMLResponse)
-async def girl_one(request: Request):
+async def about(request: Request):
     return templates.TemplateResponse("about.html", {"request": request})
 
 @app.get("/events", response_class=HTMLResponse)
-async def girl_one(request: Request):
+async def events(request: Request):
     return templates.TemplateResponse("events.html", {"request": request})
 
 @app.get("/jobs", response_class=HTMLResponse)
-async def girl_one(request: Request):
+async def jobs(request: Request):
     return templates.TemplateResponse("jobs.html", {"request": request})
 
 @app.get("/contact", response_class=HTMLResponse)
-async def girl_one(request: Request):
+async def contact(request: Request):
     return templates.TemplateResponse("contact.html", {"request": request})
 
 @app.get("/terms-and-conditions", response_class=HTMLResponse)
-async def girl_one(request: Request):
+async def terms_and_conditions(request: Request):
     return templates.TemplateResponse("terms-and-conditions.html", {"request": request})
 
 @app.get("/privacy", response_class=HTMLResponse)
-async def girl_one(request: Request):
+async def privacy(request: Request):
     return templates.TemplateResponse("privacy.html", {"request": request})
 
 @app.get("/girl_one", response_class=HTMLResponse)
@@ -57,15 +57,15 @@ async def girl_one(request: Request):
     return templates.TemplateResponse("girl_one.html", {"request": request})
 
 @app.get("/girl_two", response_class=HTMLResponse)
-async def girl_one(request: Request):
+async def girl_two(request: Request):
     return templates.TemplateResponse("girl_two.html", {"request": request})
 
 @app.get("/girl_three", response_class=HTMLResponse)
-async def girl_one(request: Request):
+async def girl_three(request: Request):
     return templates.TemplateResponse("girl_three.html", {"request": request})
 
 @app.get("/girl_four", response_class=HTMLResponse)
-async def girl_one(request: Request):
+async def girl_four(request: Request):
     return templates.TemplateResponse("girl_four.html", {"request": request})
 
 if __name__ == "__main__":
