@@ -68,5 +68,9 @@ async def girl_three(request: Request):
 async def girl_four(request: Request):
     return templates.TemplateResponse("girl_four.html", {"request": request})
 
+@app.get("/sitemap.xml")
+async def get_sitemap():
+    return StaticFiles(directory="static").get_response("sitemap.xml")
+
 if __name__ == "__main__":
     uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
