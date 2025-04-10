@@ -63,14 +63,14 @@ async def girl_two(request: Request):
 
 @app.get("/miemie", response_class=HTMLResponse)
 async def girl_three(request: Request):
-    return templates.TemplateResponse("girls/miemie.html", {"request": request})
+    return templates.TemplateResponse("/girls/miemie.html", {"request": request})
 
 @app.get("/xiaowu", response_class=HTMLResponse)
 async def girl_four(request: Request):
-    return templates.TemplateResponse("girls/xiaowu.html", {"request": request})
+    return templates.TemplateResponse("templates/girls/xiaowu.html", {"request": request})
 
 @app.get("/youyou", response_class=HTMLResponse)
-async def girl_four(request: Request):
+async def girl_five(request: Request):
     return templates.TemplateResponse("girls/youyou.html", {"request": request})
 
 @app.get("/favicon.ico")
