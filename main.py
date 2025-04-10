@@ -55,7 +55,7 @@ async def privacy(request: Request):
 
 @app.get("/dingdangmao", response_class=HTMLResponse)
 async def girl_one(request: Request):
-    return templates.TemplateResponse("girls/dingdangmao.html", {"request": request})
+    return templates.TemplateResponse("dingdangmao.html", {"request": request})
 
 @app.get("/kuikui", response_class=HTMLResponse)
 async def girl_two(request: Request):
@@ -63,11 +63,11 @@ async def girl_two(request: Request):
 
 @app.get("/miemie", response_class=HTMLResponse)
 async def girl_three(request: Request):
-    return templates.TemplateResponse("/girls/miemie.html", {"request": request})
+    return templates.TemplateResponse("girls/miemie.html", {"request": request})
 
 @app.get("/xiaowu", response_class=HTMLResponse)
 async def girl_four(request: Request):
-    return templates.TemplateResponse("templates/girls/xiaowu.html", {"request": request})
+    return templates.TemplateResponse("girls/xiaowu.html", {"request": request})
 
 @app.get("/youyou", response_class=HTMLResponse)
 async def girl_five(request: Request):
