@@ -1,4 +1,5 @@
 import uvicorn
+import os
 from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse, FileResponse
 from fastapi.staticfiles import StaticFiles
@@ -70,7 +71,8 @@ async def girl_four(request: Request):
 
 @app.get("/favicon.ico")
 def favicon():
-    return FileResponse("/static/icons/favicon.ico")
+    file_path = os.path.join("static", "icons", "favicon.ico")
+    return FileResponse(file_path)
 
 if __name__ == "__main__":
     uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
