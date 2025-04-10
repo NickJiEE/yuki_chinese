@@ -17,9 +17,9 @@ templates = Jinja2Templates(directory="templates")
 async def index(request: Request):
     return templates.TemplateResponse("index.html", {"request": request})
 
-@app.get("/girls")
+@app.get("/girl-list")
 async def girls_page(request: Request):
-    return templates.TemplateResponse("girls.html", {"request": request})
+    return templates.TemplateResponse("girl-list.html", {"request": request})
 
 @app.get("/services", response_class=HTMLResponse)
 async def services(request: Request):
@@ -55,23 +55,23 @@ async def privacy(request: Request):
 
 @app.get("/dingdangmao", response_class=HTMLResponse)
 async def girl_one(request: Request):
-    return templates.TemplateResponse("/girls/dingdangmao.html", {"request": request})
+    return templates.TemplateResponse("girls/dingdangmao.html", {"request": request})
 
 @app.get("/kuikui", response_class=HTMLResponse)
 async def girl_two(request: Request):
-    return templates.TemplateResponse("/girls/kuikui.html", {"request": request})
+    return templates.TemplateResponse("girls/kuikui.html", {"request": request})
 
 @app.get("/miemie", response_class=HTMLResponse)
 async def girl_three(request: Request):
-    return templates.TemplateResponse("/girls/miemie.html", {"request": request})
+    return templates.TemplateResponse("girls/miemie.html", {"request": request})
 
 @app.get("/xiaowu", response_class=HTMLResponse)
 async def girl_four(request: Request):
-    return templates.TemplateResponse("/girls/xiaowu.html", {"request": request})
+    return templates.TemplateResponse("girls/xiaowu.html", {"request": request})
 
 @app.get("/youyou", response_class=HTMLResponse)
 async def girl_four(request: Request):
-    return templates.TemplateResponse("/girls/youyou.html", {"request": request})
+    return templates.TemplateResponse("girls/youyou.html", {"request": request})
 
 @app.get("/favicon.ico")
 def favicon():
