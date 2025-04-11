@@ -53,25 +53,30 @@ async def terms_and_conditions(request: Request):
 async def privacy(request: Request):
     return templates.TemplateResponse("privacy.html", {"request": request})
 
+# Girls pages
 @app.get("/girls/dingdangmao", response_class=HTMLResponse)
-async def girl_one(request: Request):
+async def dingdangmao(request: Request):
     return templates.TemplateResponse("girls/dingdangmao.html", {"request": request})
 
 @app.get("/girls/kuikui", response_class=HTMLResponse)
-async def girl_two(request: Request):
+async def kuikui(request: Request):
     return templates.TemplateResponse("girls/kuikui.html", {"request": request})
 
 @app.get("/girls/miemie", response_class=HTMLResponse)
-async def girl_three(request: Request):
+async def miemie(request: Request):
     return templates.TemplateResponse("girls/miemie.html", {"request": request})
 
 @app.get("/girls/xiaowu", response_class=HTMLResponse)
-async def girl_four(request: Request):
+async def xiaowu(request: Request):
     return templates.TemplateResponse("girls/xiaowu.html", {"request": request})
 
 @app.get("/girls/youyou", response_class=HTMLResponse)
-async def girl_five(request: Request):
+async def youyou(request: Request):
     return templates.TemplateResponse("girls/youyou.html", {"request": request})
+
+@app.get("/girls/youzi", response_class=HTMLResponse)
+async def youzi(request: Request):
+    return templates.TemplateResponse("girls/youzi.html", {"request": request})
 
 @app.get("/favicon.ico")
 def favicon():
