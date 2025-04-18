@@ -78,6 +78,10 @@ async def youyou(request: Request):
 async def youzi(request: Request):
     return templates.TemplateResponse("girls/youzi.html", {"request": request})
 
+@app.get("/girls/xiaoyang", response_class=HTMLResponse)
+async def xiaoyang(request: Request):
+    return templates.TemplateResponse("girls/xiaoyang.html", {"request": request})
+
 @app.get("/favicon.ico")
 def favicon():
     file_path = os.path.join("static", "icons", "favicon.ico")
