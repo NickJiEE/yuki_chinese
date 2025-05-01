@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}叮当猫个人资料{% endblock %}
+{% block title %}Name个人资料{% endblock %}
 
 {% block content %}
 <div class="girl-container">
@@ -12,7 +12,7 @@
                 <button id="next-btn" class="arrow-btn" style="right: 10px;">⮞</button>
             </div>
             <div class="profile-info">
-                <h2>叮当猫</h2>
+                <h2>Name</h2>
                 <p><strong>性别：</strong>女</p>
                 <p><strong>身高：</strong>168 cm</p>
                 <p><strong>年龄：</strong>22</p>
@@ -27,28 +27,6 @@
         </div>
     </div>
 </div>
-
-<style>
-    .arrow-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    font-size: 2rem;
-    color: rgba(255, 105, 180, 0.7);
-    cursor: pointer;
-    padding: 0;
-    margin-right: 30px;
-    z-index: 2;
-    transition: color 0.3s;
-}
-
-.arrow-btn:hover {
-    color: rgba(255, 133, 193, 0.9);
-    transform: translateY(-50%) scale(1.2);
-}
-</style>
 
 <script>
 // List of images

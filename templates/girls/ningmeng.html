@@ -6,7 +6,11 @@
 <div class="girl-container">
     <div class="profile-card">
         <div class="profile-left">
-            <img src="/static/girls/ningmeng.jpg" alt="Person Image" class="profile-img">
+            <div class="profile-image-container" style="position: relative; text-align: center;">
+                <button id="prev-btn" class="arrow-btn" style="left: 10px;">⮜</button>
+                <img id="profile-img" src="/static/girls/ningmeng.jpg" alt="Person Image" class="profile-img" style="max-width: 100%; border-radius: 10px;">
+                <button id="next-btn" class="arrow-btn" style="right: 10px;">⮞</button>
+            </div>
             <div class="profile-info">
                 <h2>柠檬</h2>
                 <p><strong>性别：</strong>女</p>
@@ -23,4 +27,31 @@
         </div>
     </div>
 </div>
+
+<script>
+// List of images
+const images = [
+    "/static/girls/ningmeng.jpg",
+    "/static/girls/ningmeng2.webp",
+    "/static/girls/ningmeng3.webp"
+];
+
+let currentImageIndex = 0;
+
+// Get elements
+const profileImg = document.getElementById('profile-img');
+const prevBtn = document.getElementById('prev-btn');
+const nextBtn = document.getElementById('next-btn');
+
+// Button click handlers
+prevBtn.addEventListener('click', () => {
+    currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+    profileImg.src = images[currentImageIndex];
+});
+
+nextBtn.addEventListener('click', () => {
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+    profileImg.src = images[currentImageIndex];
+});
+</script>
 {% endblock %}
