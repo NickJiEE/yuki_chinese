@@ -761,24 +761,30 @@ section {
     color: #555;
 }
 
+/* Responsive Arrow Buttons in Profiles */
 .arrow-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: none;
+    background: rgba(255, 255, 255, 0.3);
     border: none;
-    font-size: 2rem;
-    color: rgba(255, 105, 180, 0.7);
+    font-size: 1.8rem;
+    color: hotpink;
     cursor: pointer;
-    padding: 0;
+    padding: 0.15rem 0.6rem;
+    border-radius: 50%;
     margin-right: 30px;
     z-index: 2;
-    transition: color 0.3s;
+    transition: background 0.3s, transform 0.3s;
 }
 
 .arrow-btn:hover {
-    color: rgba(255, 133, 193, 0.9);
-    transform: translateY(-50%) scale(1.2);
+    background: rgba(255, 255, 255, 0.45);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.swipe-hint {
+    display: none;
 }
 
 .back-btn {
@@ -1345,6 +1351,12 @@ section {
         width: 200px;
         height: auto;
         margin: 0 0 20px 0;
+        transition: opacity 0.4s ease;
+        opacity: 1;
+    }
+
+    .profile-img.fade-out {
+        opacity: 0;
     }
 
     .profile-info {
@@ -1386,4 +1398,22 @@ section {
     .center-circle {
         display: none;
     }
+
+    .arrow-btn {
+        display: none;
+    }
+
+    .swipe-hint {
+        display: block;
+        position: absolute; 
+        bottom: 10px; 
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center; 
+        font-size: 0.9rem; 
+        color: white; 
+        background: rgba(0,0,0,0.3); 
+        padding: 4px 0;
+    }
+
 }

@@ -10,6 +10,9 @@
                 <button id="prev-btn" class="arrow-btn" style="left: 10px;">⮜</button>
                 <img id="profile-img" src="/static/girls/kuikui.webp" alt="Person Image" class="profile-img" style="max-width: 100%; border-radius: 10px;">
                 <button id="next-btn" class="arrow-btn" style="right: 10px;">⮞</button>
+                <div class="swipe-hint">
+                    👉 左右滑动查看更多图片
+                </div>    
             </div>
             <div class="profile-info">
                 <h2>葵葵</h2>
@@ -34,23 +37,6 @@ const images = [
     "/static/girls/kuikui.webp",
     "/static/girls/kuikui2.webp"
 ];
-
-let currentImageIndex = 0;
-
-// Get elements
-const profileImg = document.getElementById('profile-img');
-const prevBtn = document.getElementById('prev-btn');
-const nextBtn = document.getElementById('next-btn');
-
-// Button click handlers
-prevBtn.addEventListener('click', () => {
-    currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
-    profileImg.src = images[currentImageIndex];
-});
-
-nextBtn.addEventListener('click', () => {
-    currentImageIndex = (currentImageIndex + 1) % images.length;
-    profileImg.src = images[currentImageIndex];
-});
 </script>
+<script src="/static/js/profile_mobile.js"></script>
 {% endblock %}
