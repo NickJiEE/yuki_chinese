@@ -6,7 +6,14 @@
 <div class="girl-container">
     <div class="profile-card">
         <div class="profile-left">
-            <img src="/static/girls/youzi.webp" alt="Person Image" class="profile-img">
+            <div class="profile-image-container" style="position: relative; text-align: center;">
+                <button id="prev-btn" class="arrow-btn" style="left: 10px;">⮜</button>
+                <img id="profile-img" src="/static/girls/youzi.webp" alt="Person Image" class="profile-img" style="max-width: 100%; border-radius: 10px;">
+                <button id="next-btn" class="arrow-btn" style="right: 10px;">⮞</button>
+                <div class="swipe-hint">
+                    👉 左右滑动查看更多图片
+                </div>                
+            </div>
             <div class="profile-info">
                 <h2>柚子</h2>
                 <p><strong>性别：</strong>女</p>
@@ -23,4 +30,12 @@
         </div>
     </div>
 </div>
-{% endblock %}
+<script>
+    // List of images
+    const images = [
+        "/static/girls/youzi.webp",
+        "/static/girls/youzi2.webp"
+    ];
+    </script>
+    <script src="/static/js/profile_mobile.js"></script>
+    {% endblock %}
